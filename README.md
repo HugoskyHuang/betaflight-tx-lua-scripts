@@ -1,4 +1,4 @@
-# betaflight-tx-lua-scripts
+# betaflight kalman-tx-lua-scripts
 
 ### Important:
 
@@ -8,10 +8,10 @@ For now, the recommendation is for users wanting to update OpenTX from 2.2.0 to 
 
 ### How to download the scripts
 
-Please visit the [releases page](https://github.com/betaflight/betaflight-tx-lua-scripts/releases) to download a zip file containing latest version.
+Please visit the [releases page](https://github.com/papayou66/betaflight-tx-lua-scripts/releases) to download a zip file containing latest version.
 
 ## Firmware Considerations
-- Betaflight - As a best practice, it is recommended to use the most recent stable release of Betaflight to obtain the best possible results.
+- Betaflight - Work only with release 2017_12_29_bf_3.3_fast_kalman_1.2_rfrates_kdyaw_UH32_lua_settings
 - Crossfire - v2.11 or greater
 - FrSky - While most receivers work fine, it's recommended to update the XSR family of receivers to their most recent firmware version to correct any known bugs in SmartPort telemetry.
 
