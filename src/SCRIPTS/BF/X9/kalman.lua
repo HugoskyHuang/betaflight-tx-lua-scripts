@@ -1,14 +1,19 @@
+
 return {
-   read           = 114, -- MSP_GYRO_KALMAN
-   write          = 207, -- MSP_GYRO_KALMAN
-   title          = "kalman",
-   reboot         = false,
+   read           = 225, -- MSP_GYRO_FAST_KALMAN
+   write          = 226, -- MSP_SET_GYRO_FAST_KALMAN
+   title          = "Kalman",
+   reboot         = true,
    eepromWrite    = true,
-   minBytes       = 4,
-   text = {},
+   minBytes       = 6,
+   text = {
+      { t = "Kalman Q", x = 30, y = 17, to = SMLSIZE },
+      { t = "Kalman R", x = 30, y = 30, to = SMLSIZE },
+      { t = "Kalman P", x = 30, y = 43, to = SMLSIZE },
+   },
    fields = {
-      { t = "Kalman",  x =  30, y = 20, sp = 45, min = 0, max = 1, vals = { 1 }, to = SMLSIZE, table = { [0] = "OFF", "ON" } },
-      { t = "Kalman Q ",  x =  30, y = 30, sp = 45, min = 0, max = 16000, vals = { 2, 3 }, mult = 100, to = SMLSIZE },
-      { t = "Kalman R ",  x =  30, y = 40, sp = 45, min = 0, max = 16000, vals = { 4, 5 }, mult = 1, to = SMLSIZE },      
+      { x = 90,  y = 17, to=SMLSIZE, min = 0, max = 16000, vals = { 1, 2 }, mult = 100 },
+      { x = 90,  y = 30, to=SMLSIZE, min = 0, max = 16000, vals = { 3, 4 }, mult = 1 },
+      { x = 90,  y = 43, to=SMLSIZE, min = 0, max = 16000, vals = { 5, 6 }, mult = 100 },
    },
 }
